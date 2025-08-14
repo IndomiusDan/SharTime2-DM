@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SharTime</title>
+    <!-- Enlace al archivo de estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="#menu" class="navbar-tab active" data-target="menu-content">Menú</a>
+        <a href="#logros" class="navbar-tab" data-target="logros-content">Logros</a>
+        <a href="#actividades" class="navbar-tab" data-target="actividades-content">Actividades</a>
+        <a href="#ruleta" class="navbar-tab" data-target="ruleta-content">Ruleta</a>
+        <a href="#clasificacion" class="navbar-tab" data-target="clasificacion-content">Clasificación</a>
+        <a href="#miniguia" class="navbar-tab" data-target="miniguia-content">MiniGuía</a>
+        <a href="#valores" class="navbar-tab" data-target="valores-content">Valores</a>
+        <a href="#sobrenosotros" class="navbar-tab" data-target="sobrenosotros-content">Sobre Nosotros</a>
+    </nav>
+
+    <!-- Contenido de las pestañas -->
+    <main>
+        <!-- Pestaña 1: Menú -->
+        <div id="menu-content" class="content">
+            SharTime
+        </div>
+
+        <!-- Pestaña 2: Logros -->
+        <div id="logros-content" class="content">
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Logro</th>
+                            <th>Descripción</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Héroe de la Semana</td><td>Completar 3 actividades en 7 días.</td><td>&#x2714; Ganado</td></tr>
+                        <tr><td>Campeón de la Empatía</td><td>Demostrar empatía en 5 actividades.</td><td>Pendiente</td></tr>
+                        <tr><td>Maestro de Valores</td><td>Ganar el valor de la Gratitud 3 veces.</td><td>Pendiente</td></tr>
+                        <tr><td>Constructor de Torres</td><td>Completar la actividad de Perseverancia.</td><td>&#x2714; Ganado</td></tr>
+                        <tr><td>Jefe de Cocina</td><td>Completar la actividad de Tolerancia.</td><td>Pendiente</td></tr>
+                        <tr><td>Explorador del Tiempo</td><td>Completar la actividad de Paciencia.</td><td>&#x2714; Ganado</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Pestaña 3: Actividades -->
+        <div id="actividades-content" class="content">
+            <div class="circles-container">
+                <div class="circle">El espejo de las emociones</div>
+                <div class="circle">El juego de las reglas</div>
+                <div class="circle">El diario de la gratitud</div>
+                <div class="circle">Cuidando a la planta</div>
+                <div class="circle">El desafío de las torres</div>
+                <div class="circle">La historia de la verdad</div>
+                <div class="circle">La caja de los tesoros</div>
+                <div class="circle">El reto de la espera</div>
+                <div class="circle">El rompecabezas cooperativo</div>
+                <div class="circle">Cocina de otra cultura</div>
+            </div>
+        </div>
+
+        <!-- Pestaña 4: Ruleta -->
+        <div id="ruleta-content" class="content">
+            <div class="roulette-container">
+                <h2>¡Gira la ruleta y descubre un reto!</h2>
+                <div class="wheel-box">
+                    <div class="wheel">
+                        <div class="wheel-segment bike"><p>Ir en Bicicleta</p></div>
+                        <div class="wheel-segment plane"><p>Ir en Avión</p></div>
+                    </div>
+                </div>
+                <p id="roulette-result">Haz clic para girar</p>
+                <div class="confetti-container" id="confetti-container"></div>
+            </div>
+        </div>
+
+        <!-- Pestaña 5: Clasificación -->
+        <div id="clasificacion-content" class="content">
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Posición</th>
+                            <th>Familia</th>
+                            <th>Puntos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>Familia Sánchez</td><td>1500</td></tr>
+                        <tr><td>2</td><td>Familia García</td><td>1200</td></tr>
+                        <tr><td>3</td><td>Familia Pérez</td><td>1150</td></tr>
+                        <tr><td>4</td><td>Familia López</td><td>980</td></tr>
+                        <tr><td>5</td><td>Familia Fernández</td><td>950</td></tr>
+                        <tr><td>6</td><td>Familia Rodríguez</td><td>890</td></tr>
+                        <tr><td>7</td><td>Familia González</td><td>810</td></tr>
+                        <tr><td>8</td><td>Familia Gómez</td><td>750</td></tr>
+                        <tr><td>9</td><td>Familia Ruiz</td><td>720</td></tr>
+                        <tr><td>10</td><td>Familia Díaz</td><td>680</td></tr>
+                        <tr><td>11</td><td>Familia Martín</td><td>640</td></tr>
+                        <tr><td>12</td><td>Familia Jiménez</td><td>590</td></tr>
+                        <tr><td>13</td><td>Familia Moreno</td><td>530</td></tr>
+                        <tr><td>14</td><td>Familia Muñoz</td><td>480</td></tr>
+                        <tr><td>15</td><td>Familia Romero</td><td>410</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Pestaña 6: MiniGuía -->
+        <div id="miniguia-content" class="content">
+            <p style="max-width: 800px; margin: 0 auto; line-height: 1.6;">
+                Enseñar valores a los hijos es un viaje constante y enriquecedor. La clave no es dar un sermón, sino predicar con el ejemplo y aprovechar los momentos cotidianos para reforzarlos. Pueden usar las actividades de SharTime como un punto de partida, pero la magia reside en la conversación que surge durante y después. Por ejemplo, al completar una actividad de gratitud, hablen sobre por qué es importante ser agradecido y cómo se siente uno al practicarlo. La consistencia y la paciencia son sus mejores aliados. Al convertir el aprendizaje en un juego, los niños se involucran de manera natural y los valores se arraigan de forma más profunda.
+            </p>
+        </div>
+
+        <!-- Pestaña 7: Valores -->
+        <div id="valores-content" class="content">
+            <div class="circles-container">
+                <div class="circle">Empatía</div>
+                <div class="circle">Respeto</div>
+                <div class="circle">Gratitud</div>
+                <div class="circle">Responsabilidad</div>
+                <div class="circle">Perseverancia</div>
+                <div class="circle">Honestidad</div>
+                <div class="circle">Generosidad</div>
+                <div class="circle">Paciencia</div>
+                <div class="circle">Cooperación</div>
+                <div class="circle">Torero</div>
+            </div>
+        </div>
+
+        <!-- Pestaña 8: Sobre Nosotros -->
+        <div id="sobrenosotros-content" class="content">
+            <p style="max-width: 800px; margin: 0 auto; line-height: 1.6;">
+                Somos SharTime, una iniciativa de dos jóvenes que creen firmemente en el poder del tiempo en familia. Nuestro objetivo es ser un puente entre padres e hijos, creando actividades divertidas y educativas que fomenten la conexión y la transmisión de valores esenciales. Queremos que cada momento compartido sea una oportunidad para crecer juntos, construir recuerdos inolvidables y formar personas más empáticas y responsables para el futuro.
+            </p>
+        </div>
+    </main>
+
+</body>
+</html>
+<script src="script.js"></script>

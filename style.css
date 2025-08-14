@@ -1,0 +1,217 @@
+/* Estilos generales */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Estilos del menú de navegación */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #ff8c00; /* Naranja */
+    padding: 10px 0;
+}
+
+.navbar-tab {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-tab:hover,
+.navbar-tab.active {
+    background-color: #e67e00; /* Naranja más oscuro */
+    border-radius: 5px;
+}
+
+/* Contenido general oculto por defecto */
+.content {
+    padding: 20px;
+    display: none;
+}
+
+/* Mostrar por defecto el menú */
+#menu-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    font-size: 8rem;
+    font-weight: bold;
+    text-align: center;
+    color: #000000;
+}
+
+/* Tabla para Logros y Clasificación */
+.table-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.table-container table {
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;
+    text-align: left;
+    border: 2px solid #ff8c00;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table-container th,
+.table-container td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.table-container th {
+    background-color: #ff8c00;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+.table-container tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Círculos de Actividades y Valores */
+.circles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    background-color: #ff8c00;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.circle:hover {
+    transform: scale(1.1);
+}
+
+/* Ruleta */
+.roulette-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+
+.wheel-box {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 5px solid #ff8c00;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.wheel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: transform 5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.wheel-segment {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    font-size: 1.5em;
+    color: white;
+    font-weight: bold;
+    transform-origin: 100% 50%;
+}
+
+.wheel-segment.bike {
+    background-color: #e67e00;
+    clip-path: polygon(0 0, 100% 0, 50% 50%, 0 100%);
+    transform: rotate(90deg);
+}
+
+.wheel-segment.plane {
+    background-color: #ff8c00;
+    clip-path: polygon(0 0, 100% 0, 50% 50%, 0 100%);
+    transform: rotate(-90deg);
+}
+
+.roulette-container p {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Confeti */
+.confetti-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ff8c00;
+    opacity: 0;
+    animation: confetti-fall 2s ease-out forwards;
+}
+
+@keyframes confetti-fall {
+    0% {
+        transform: translateY(-100vh) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(720deg);
+        opacity: 0;
+    }
+}
+
+/* Footer opcional */
+footer {
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #777;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+}
